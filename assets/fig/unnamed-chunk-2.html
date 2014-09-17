@@ -1,0 +1,468 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart1e501d512990' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1e501d512990()
+    });
+    function drawchart1e501d512990(){  
+      var opts = {
+ "dom": "chart1e501d512990",
+"width":    800,
+"height":    400,
+"x": "Education",
+"y": "Fertility",
+"id": "chart1e501d512990" 
+},
+        data = [
+ {
+ "Fertility":           80.2,
+"Agriculture":             17,
+"Examination": 15,
+"Education": 12,
+"Catholic":           9.96,
+"Infant.Mortality":           22.2 
+},
+{
+ "Fertility":           83.1,
+"Agriculture":           45.1,
+"Examination": 6,
+"Education": 9,
+"Catholic":          84.84,
+"Infant.Mortality":           22.2 
+},
+{
+ "Fertility":           92.5,
+"Agriculture":           39.7,
+"Examination": 5,
+"Education": 5,
+"Catholic":           93.4,
+"Infant.Mortality":           20.2 
+},
+{
+ "Fertility":           85.8,
+"Agriculture":           36.5,
+"Examination": 12,
+"Education": 7,
+"Catholic":          33.77,
+"Infant.Mortality":           20.3 
+},
+{
+ "Fertility":           76.9,
+"Agriculture":           43.5,
+"Examination": 17,
+"Education": 15,
+"Catholic":           5.16,
+"Infant.Mortality":           20.6 
+},
+{
+ "Fertility":           76.1,
+"Agriculture":           35.3,
+"Examination": 9,
+"Education": 7,
+"Catholic":          90.57,
+"Infant.Mortality":           26.6 
+},
+{
+ "Fertility":           83.8,
+"Agriculture":           70.2,
+"Examination": 16,
+"Education": 7,
+"Catholic":          92.85,
+"Infant.Mortality":           23.6 
+},
+{
+ "Fertility":           92.4,
+"Agriculture":           67.8,
+"Examination": 14,
+"Education": 8,
+"Catholic":          97.16,
+"Infant.Mortality":           24.9 
+},
+{
+ "Fertility":           82.4,
+"Agriculture":           53.3,
+"Examination": 12,
+"Education": 7,
+"Catholic":          97.67,
+"Infant.Mortality":             21 
+},
+{
+ "Fertility":           82.9,
+"Agriculture":           45.2,
+"Examination": 16,
+"Education": 13,
+"Catholic":          91.38,
+"Infant.Mortality":           24.4 
+},
+{
+ "Fertility":           87.1,
+"Agriculture":           64.5,
+"Examination": 14,
+"Education": 6,
+"Catholic":          98.61,
+"Infant.Mortality":           24.5 
+},
+{
+ "Fertility":           64.1,
+"Agriculture":             62,
+"Examination": 21,
+"Education": 12,
+"Catholic":           8.52,
+"Infant.Mortality":           16.5 
+},
+{
+ "Fertility":           66.9,
+"Agriculture":           67.5,
+"Examination": 14,
+"Education": 7,
+"Catholic":           2.27,
+"Infant.Mortality":           19.1 
+},
+{
+ "Fertility":           68.9,
+"Agriculture":           60.7,
+"Examination": 19,
+"Education": 12,
+"Catholic":           4.43,
+"Infant.Mortality":           22.7 
+},
+{
+ "Fertility":           61.7,
+"Agriculture":           69.3,
+"Examination": 22,
+"Education": 5,
+"Catholic":           2.82,
+"Infant.Mortality":           18.7 
+},
+{
+ "Fertility":           68.3,
+"Agriculture":           72.6,
+"Examination": 18,
+"Education": 2,
+"Catholic":           24.2,
+"Infant.Mortality":           21.2 
+},
+{
+ "Fertility":           71.7,
+"Agriculture":             34,
+"Examination": 17,
+"Education": 8,
+"Catholic":            3.3,
+"Infant.Mortality":             20 
+},
+{
+ "Fertility":           55.7,
+"Agriculture":           19.4,
+"Examination": 26,
+"Education": 28,
+"Catholic":          12.11,
+"Infant.Mortality":           20.2 
+},
+{
+ "Fertility":           54.3,
+"Agriculture":           15.2,
+"Examination": 31,
+"Education": 20,
+"Catholic":           2.15,
+"Infant.Mortality":           10.8 
+},
+{
+ "Fertility":           65.1,
+"Agriculture":             73,
+"Examination": 19,
+"Education": 9,
+"Catholic":           2.84,
+"Infant.Mortality":             20 
+},
+{
+ "Fertility":           65.5,
+"Agriculture":           59.8,
+"Examination": 22,
+"Education": 10,
+"Catholic":           5.23,
+"Infant.Mortality":             18 
+},
+{
+ "Fertility":             65,
+"Agriculture":           55.1,
+"Examination": 14,
+"Education": 3,
+"Catholic":           4.52,
+"Infant.Mortality":           22.4 
+},
+{
+ "Fertility":           56.6,
+"Agriculture":           50.9,
+"Examination": 22,
+"Education": 12,
+"Catholic":          15.14,
+"Infant.Mortality":           16.7 
+},
+{
+ "Fertility":           57.4,
+"Agriculture":           54.1,
+"Examination": 20,
+"Education": 6,
+"Catholic":            4.2,
+"Infant.Mortality":           15.3 
+},
+{
+ "Fertility":           72.5,
+"Agriculture":           71.2,
+"Examination": 12,
+"Education": 1,
+"Catholic":            2.4,
+"Infant.Mortality":             21 
+},
+{
+ "Fertility":           74.2,
+"Agriculture":           58.1,
+"Examination": 14,
+"Education": 8,
+"Catholic":           5.23,
+"Infant.Mortality":           23.8 
+},
+{
+ "Fertility":             72,
+"Agriculture":           63.5,
+"Examination": 6,
+"Education": 3,
+"Catholic":           2.56,
+"Infant.Mortality":             18 
+},
+{
+ "Fertility":           60.5,
+"Agriculture":           60.8,
+"Examination": 16,
+"Education": 10,
+"Catholic":           7.72,
+"Infant.Mortality":           16.3 
+},
+{
+ "Fertility":           58.3,
+"Agriculture":           26.8,
+"Examination": 25,
+"Education": 19,
+"Catholic":          18.46,
+"Infant.Mortality":           20.9 
+},
+{
+ "Fertility":           65.4,
+"Agriculture":           49.5,
+"Examination": 15,
+"Education": 8,
+"Catholic":            6.1,
+"Infant.Mortality":           22.5 
+},
+{
+ "Fertility":           75.5,
+"Agriculture":           85.9,
+"Examination": 3,
+"Education": 2,
+"Catholic":          99.71,
+"Infant.Mortality":           15.1 
+},
+{
+ "Fertility":           69.3,
+"Agriculture":           84.9,
+"Examination": 7,
+"Education": 6,
+"Catholic":          99.68,
+"Infant.Mortality":           19.8 
+},
+{
+ "Fertility":           77.3,
+"Agriculture":           89.7,
+"Examination": 5,
+"Education": 2,
+"Catholic":            100,
+"Infant.Mortality":           18.3 
+},
+{
+ "Fertility":           70.5,
+"Agriculture":           78.2,
+"Examination": 12,
+"Education": 6,
+"Catholic":          98.96,
+"Infant.Mortality":           19.4 
+},
+{
+ "Fertility":           79.4,
+"Agriculture":           64.9,
+"Examination": 7,
+"Education": 3,
+"Catholic":          98.22,
+"Infant.Mortality":           20.2 
+},
+{
+ "Fertility":             65,
+"Agriculture":           75.9,
+"Examination": 9,
+"Education": 9,
+"Catholic":          99.06,
+"Infant.Mortality":           17.8 
+},
+{
+ "Fertility":           92.2,
+"Agriculture":           84.6,
+"Examination": 3,
+"Education": 3,
+"Catholic":          99.46,
+"Infant.Mortality":           16.3 
+},
+{
+ "Fertility":           79.3,
+"Agriculture":           63.1,
+"Examination": 13,
+"Education": 13,
+"Catholic":          96.83,
+"Infant.Mortality":           18.1 
+},
+{
+ "Fertility":           70.4,
+"Agriculture":           38.4,
+"Examination": 26,
+"Education": 12,
+"Catholic":           5.62,
+"Infant.Mortality":           20.3 
+},
+{
+ "Fertility":           65.7,
+"Agriculture":            7.7,
+"Examination": 29,
+"Education": 11,
+"Catholic":          13.79,
+"Infant.Mortality":           20.5 
+},
+{
+ "Fertility":           72.7,
+"Agriculture":           16.7,
+"Examination": 22,
+"Education": 13,
+"Catholic":          11.22,
+"Infant.Mortality":           18.9 
+},
+{
+ "Fertility":           64.4,
+"Agriculture":           17.6,
+"Examination": 35,
+"Education": 32,
+"Catholic":          16.92,
+"Infant.Mortality":             23 
+},
+{
+ "Fertility":           77.6,
+"Agriculture":           37.6,
+"Examination": 15,
+"Education": 7,
+"Catholic":           4.97,
+"Infant.Mortality":             20 
+},
+{
+ "Fertility":           67.6,
+"Agriculture":           18.7,
+"Examination": 25,
+"Education": 7,
+"Catholic":           8.65,
+"Infant.Mortality":           19.5 
+},
+{
+ "Fertility":             35,
+"Agriculture":            1.2,
+"Examination": 37,
+"Education": 53,
+"Catholic":          42.34,
+"Infant.Mortality":             18 
+},
+{
+ "Fertility":           44.7,
+"Agriculture":           46.6,
+"Examination": 16,
+"Education": 29,
+"Catholic":          50.43,
+"Infant.Mortality":           18.2 
+},
+{
+ "Fertility":           42.8,
+"Agriculture":           27.7,
+"Examination": 22,
+"Education": 29,
+"Catholic":          58.33,
+"Infant.Mortality":           19.3 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
